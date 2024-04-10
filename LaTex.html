@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <header>
+        <h1 class="head-text">Редактор LaTeX</h1>
+        <!-- <input type="text"> -->
+        <div class="col-lg-auto">    
+            <select class="lang-form" data-language-box="">
+                    <option selected="" value="en">English (English)</option>
+                    <option value="ar">Arabic (العربية)</option>
+                    <option value="bg">Bulgarian (български език)</option>
+                    <option value="ca">Catalan (català)</option>
+                    <option value="zh-CN">Chinese Simplified (中文)</option>
+                    <option value="zh-TW">Chinese Traditional (中文 )</option>
+                    <option value="hr">Croatian (hrvatski jezik)</option>
+                    <option value="cs">Czech (čeština)</option>
+                    <option value="da">Danish (dansk)</option>
+                    <option value="nl">Dutch (Nederlands)</option>
+                    <option value="et">Estonian (eesti)</option>
+                    <option value="tl">Tagalog (Wikang Tagalog)</option>
+                    <option value="fi">Finnish (suomi)</option>
+                    <option value="fr">French (français)</option>
+                    <option value="de">German (Deutsch)</option>
+                    <option value="el">Greek (ελληνικά)</option>
+                    <option value="he">ebrew (ברית)</option>
+                    <option value="hi">Hindi (हिन्दी, हिंदी)</option>
+                    <option value="hu">Hungarian (magyar)</option>
+                    <option value="is">Icelandic (Íslenska)</option>
+                    <option value="id">Indonesian (Bahasa Indonesia)</option>
+                    <option value="it">Italian (Italiano)</option>
+                    <option value="ja">Japanese (日本語 )</option>
+                    <option value="ko">Korean (한국어)</option>
+                    <option value="lv">Latvian (latviešu valoda)</option>
+                    <option value="lt">Lithuanian (lietuvių kalba)</option>
+                    <option value="ms">Malay (بهاس ملايو)</option>
+                    <option value="no">Norwegian (Norsk)</option>
+                    <option value="fa">Persian (فارسی)</option>
+                    <option value="pl">Polish (język polski)</option>
+                    <option value="pt">Portuguese (Português)</option>
+                    <option value="ro">Romanian (Română)</option>
+                    <option value="ru">Russian (русский)</option>
+                    <option value="sr">Serbian (српски језик)</option>
+                    <option value="sk">Slovak (Slovenčina)</option>
+                    <option value="sl">Slovenian (Slovenščina)</option>
+                    <option value="es">Spanish (Español)</option>
+                    <option value="sv">  Swedish (Svenska)</option>
+                    <option value="th">Thai ( ไทย)</option>
+                    <option value="tr">Turkish (Türkçe)</option>
+                    <option value="uk">Ukrainian (Українська)</option>
+                    <option value="ur">Uzbek (اردو)</option>
+                    <option value="vi">Vietnamese (Tiếng Việt)</option>
+            </select>
+        
+                        </div>
+    </header>
+    <main>
+        <div class="latex-container">
+            <p class="form-text">Відредагуйте латексне рівняння онлайн, а потім збережіть його як зображення.</p>
+            <p class="form-text">Приклад: <span class="example-text"> $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</span> </p>
+            <div class="line"></div>
+      <textarea class="form-control txt-input" rows="5" placeholder="Enter your LaTeX code here">
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+        </textarea>
+        <div class="mb-3 row">
+            <div class="col">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="chk-realtime" checked="">
+                    <label class="form-check-label" for="chk-realtime">
+                        Render as you type
+                    </label>
+                </div>
+            </div>
+            <div class="col text-end">
+                <button class="btn btn-primary btn-render" disabled="">
+                    <i class="fa-solid fa-subscript"></i>
+                    Х₁ Render
+                </button>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-auto">
+                <label for="txt-result-w">
+                    Result Width
+                </label>
+            </div>
+            <div class="col">
+                <input id="txt-result-w" class="form-range" min="1" max="100" value="100" type="range">
+            </div>
+        </div>
+        <div class="lnk-result" target="_blank">When <mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2260"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><mo>≠</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container>, there are two solutions to <mjx-container class="MathJax" jax="CHTML" style="font-size: 113.1%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container> and they are <mjx-container class="MathJax" jax="CHTML" display="true" style="font-size: 113.1%; position: relative;"><mjx-math display="true" class="MJX-TEX" aria-hidden="true" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cB1"></mjx-c></mjx-mo><mjx-msqrt space="3"><mjx-sqrt><mjx-surd><mjx-mo class="mjx-n"><mjx-c class="mjx-c221A"></mjx-c></mjx-mo></mjx-surd><mjx-box style="padding-top: 0.087em;"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.289em;"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c34"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi></mjx-box></mjx-sqrt></mjx-msqrt></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2E"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>x</mi><mo>=</mo><mrow data-mjx-texclass="ORD"><mfrac><mrow><mo>−</mo><mi>b</mi><mo>±</mo><msqrt><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow><mo>.</mo></math></mjx-assistive-mml></mjx-container></div>
+      <div class="block-btn">
+        <button class="latex-btn copy-color">
+            Copy to Clipboard
+         </button>
+         <button class="latex-btn  save-comp-color">
+             Save to Computer
+         </button>
+         <button class="latex-btn save-disk-color">
+           Save to Google Drive™️
+         </button>
+      </div>
+        </div>
+
+    </main>
+    <footer>
+    <div class="list-link">
+        <a href="./index.html" class="">будинки</a>
+        <a href="./privacy.html" class="">Політика конфіденційності</a>
+        <a href="./use.html" class="">Умови користування</a>
+        <a href="./communication.html" class="">Зв'яжіться з нами</a>
+    </div>
+    <div>
+        <h1>Редактор LaTeX</h1>
+    </div>
+</footer>
+</body>
+</html>
